@@ -162,7 +162,9 @@ function init() {
 	elgg_register_js('gallery.tagger.js', elgg_get_simplecache_url('js', 'framework/gallery/tagger'));
 
 	// Load fonts
+	elgg_unextend_view('page/elements/head', 'framework/fonts/font-awesome');
 	elgg_extend_view('page/elements/head', 'framework/fonts/font-awesome');
+	elgg_unextend_view('page/elements/head', 'framework/fonts/open-sans');
 	elgg_extend_view('page/elements/head', 'framework/fonts/open-sans');
 
 
